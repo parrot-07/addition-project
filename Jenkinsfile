@@ -3,21 +3,21 @@ pipeline{
     docker{image 'python:3.9'}
   }
   stages{
-    stage{'Code checkout'}
+    stage('Code checkout')
     {
       steps{
         git 'https://github.com/parrot-07/addition-project.git'
       }
     }
-    stage{'build docker image'}
+    stage('build docker image')
     {
       steps{
         script{
-          sh 'docker built -t addition-app .'
+          sh 'docker built -t addition-app'
         }
       }
     }
-    stage{'execute addition script'}
+    stage('execute addition script')
     {
       steps{
         script{
