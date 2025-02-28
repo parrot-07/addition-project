@@ -13,7 +13,7 @@ pipeline{
     {
       steps{
         script{
-          sh 'docker build -t addition-app'
+          sh 'docker build -t addition-app .'
         }
       }
     }
