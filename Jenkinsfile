@@ -6,7 +6,7 @@ pipeline{
     stage('Code checkout')
     {
       steps{
-        git branch:'main' url:'https://github.com/parrot-07/addition-project.git'
+        git branch:'main', url:'https://github.com/parrot-07/addition-project.git'
       }
     }
     stage('build docker image')
