@@ -2,7 +2,7 @@
 
 #addition of two numbers
 
-def add(x,y)
+def add(x,y):
   sum = (x + y)
   return sum
 
