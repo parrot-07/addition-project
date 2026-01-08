@@ -1,4 +1,4 @@
 FROM python:3.9
-WORKDIR /dir/app
-COPY . /dir/app
+WORKDIR /app
+COPY . /app
 CMD ["python", "addition.py"]
